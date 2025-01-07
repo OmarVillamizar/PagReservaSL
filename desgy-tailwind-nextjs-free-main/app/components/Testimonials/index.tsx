@@ -95,11 +95,12 @@ export default class MultipleItems extends Component {
             <div className="bg-testimonial pt-40 pb-32 lg:py-32" id="testimonial-section">
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 '>
 
-                    <div className="text-center">
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-3">Algunas reseñas</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4">Escritas por nuestros huéspedes</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-25 lg:-mr-32 my-4">¡Mira lo que opinan los demás!</h3>
-                    </div>
+                <div className="text-center">
+    <h3 className="text-3xl sm:text-5xl font-bold text-black my-3">Algunas reseñas</h3>
+    <h3 className="text-3xl sm:text-5xl font-bold text-black text-opacity-50 lg:mr-48 my-4">Escritas por nuestros huéspedes</h3>
+    <h3 className="text-3xl sm:text-5xl font-bold text-black text-opacity-25 lg:-mr-32 my-4">¡Mira lo que opinan los demás!</h3>
+</div>
+
 
 
                     <Slider {...settings}>
