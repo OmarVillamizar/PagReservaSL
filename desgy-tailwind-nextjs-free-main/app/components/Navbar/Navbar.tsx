@@ -40,7 +40,7 @@ const Navbar = () => {
 
                             <div className="flex flex-shrink-0 items-center border-right">
                                 <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
-                                    Desgy Solutions
+                                    Apartamento Reserva de San Luis
                                 </Link>
                             </div>
 
@@ -65,7 +65,6 @@ const Navbar = () => {
 
                             </div>
                             {/* <button className='hidden lg:flex justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white'>Contact us</button> */}
-                            <Contactusform />
                         </div>
 
 
