@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Slider from "react-slick";
 import React, { Component } from "react";
 import { StarIcon } from '@heroicons/react/24/solid';
@@ -7,7 +7,6 @@ import Image from "next/image";
 // CAROUSEL DATA
 
 interface DataType {
-    profession: string;
     comment: string;
     imgSrc: string;
     name: string;
@@ -15,41 +14,32 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user1.svg',
+        name: "Gabriel",
+        comment: 'El apartamento es tal cual se ve en las fotos. La zona es tranquila, segura y tiene acceso fácil a centros comerciales y supermercados. El anfitrión fue amable y atento en todo momento. Excelente opción para hospedarse. La limpieza estuvo muy bien',
+        imgSrc: '/images/testimonial/gabriel.png',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user2.svg',
+        name: "Vivian",
+        comment: 'Excelente anfitrióna con disposición y apoyo en todo lo que se requiere.. MARAVILLOSO ❤️❤️❤️.',
+        imgSrc: '/images/testimonial/vivian.png',
+    },
+
+    {
+        name: "Niray",
+        comment: 'Es confortable y tranquilo, la ubicación permite transportarse en pocos minutos a los centros comerciales y supermercados.',
+        imgSrc: '/images/testimonial/niray.png',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user3.svg',
+        name: "Gerardo",
+        comment: 'Juliana es una excelente anfitriona, respondió a mis preguntas rápidamente. El apartamento es cómo se ve en las fotos. Un alojamiento limpio, equipado y cerca del aeropuerto y el centro de la ciudad de Cúcuta.',
+        imgSrc: '/images/testimonial/gerardo.png',
     },
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user1.svg',
+        name: "Arlette",
+        comment: 'Quedarse en el apto de Janndy es un paseo total de principio a fin. Un sitio súper bien ubicado, muy seguro, confiable, con piscina y gym, cosas super necesarias como farmacia y supermercado están cerquita. De volver a Cúcuta volvería sin pensarlo.',
+        imgSrc: '/images/testimonial/arlette.png',
     },
-    {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user2.svg',
-    },
-    {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user3.svg',
-    },
+    
 ]
 
 // CAROUSEL SETTINGS
@@ -106,9 +96,9 @@ export default class MultipleItems extends Component {
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 '>
 
                     <div className="text-center">
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-3">See what others are saying.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4">See what others are saying.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-25 lg:-mr-32 my-4">See what others are saying.</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold text-black my-3">Algunas reseñas</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4">Escritas por nuestros huéspedes</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-25 lg:-mr-32 my-4">¡Mira lo que opinan los demás!</h3>
                     </div>
 
 
@@ -116,13 +106,13 @@ export default class MultipleItems extends Component {
                         {postData.map((items, i) => (
                             <div key={i} className="relative">
                                 <div className='bg-white test-sha m-3 p-10 my-20 rounded-3xl'>
-                                    <Image src={items.imgSrc} alt={items.imgSrc} width={71} height={71} className="inline-block m-auto absolute test-pos" />
+                                    <Image src={items.imgSrc} alt={items.imgSrc} width={71} height={71} className="inline-block m-auto absolute test-pos rounded-lg" />
                                     <h4 className='text-base font-medium text-testColor my-4'>{items.comment}</h4>
                                     <hr style={{ color: "lightgrey" }} />
                                     <div className="flex justify-between">
                                         <div>
                                             <h3 className='text-base font-medium pt-4 pb-2'>{items.name}</h3>
-                                            <h3 className='text-xs font-medium  pb-2 opacity-50'>{items.profession}</h3>
+
                                         </div>
                                         <div className="flex">
                                             <StarIcon width={20} className="star" />
@@ -138,7 +128,6 @@ export default class MultipleItems extends Component {
                     </Slider>
                 </div>
             </div>
-
         );
     }
 }

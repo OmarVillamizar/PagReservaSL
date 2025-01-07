@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from './Button';
 
 const Banner = () => {
     return (
@@ -14,23 +15,23 @@ const Banner = () => {
                         </h1>
                     </div>
                     <div className='my-7 text-center lg:text-start'>
-                        <button className='text-sm md:text-xl font-semibold hover:shadow-xl bg-blue text-white py-3 px-6 md:py-5 md:px-14 rounded-full hover:bg-hoblue'>
-                            airbnb
-                        </button>
+                        <Button />
                     </div>
                 </div>
 
                 {/* COLUMN-2 */}
 
                 <div className='lg:-m-24 lg:pt-20 lg:block'>
+                <a href="https://es-l.airbnb.com/rooms/768044283923462671?guests=1&adults=1&s=67&unique_share_id=a4b9c087-e448-4d78-bc6f-b277516b65a5" target="_blank" rel="noopener noreferrer">
                     <Image src="/images/SanLuis/Puntaje.png" alt="hero-image" width={800} height={642} />
+                </a>
+                <a href="https://es-l.airbnb.com/rooms/768044283923462671?guests=1&adults=1&s=67&unique_share_id=a4b9c087-e448-4d78-bc6f-b277516b65a5" target="_blank" rel="noopener noreferrer">
                     <Image src="/images/SanLuis/Sala.jpeg" alt="hero-image" width={800} height={642} className='rounded-lg'/>
-                </div>
-                
-
+                </a>
+                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Banner;
