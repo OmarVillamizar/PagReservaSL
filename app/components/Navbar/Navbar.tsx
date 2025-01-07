@@ -36,7 +36,7 @@ const Navbar = () => {
                         <div className="flex flex-1 items-center sm:justify-between">
                             {/* LOGO */}
                             <div className="flex flex-shrink-0 items-center border-right">
-                                <Link href="/" className="text-2xl sm:text-4xl font-semibold text-black">
+                                <Link href="/" className="text-xl sm:text-4xl font-semibold text-black">
                                     Apartamento Reserva de San Luis
                                 </Link>
                             </div>
